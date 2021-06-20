@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-5" >
+    {% for stock in allstocks %}
+    <a href="{{stock.Sno}}/"<h6>{{stock.title}}</h6></a><hr/>  
+    {% endfor %}
+    </div>
+
+{% endblock content %}
